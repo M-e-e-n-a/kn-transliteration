@@ -184,6 +184,42 @@ const _isoConsonants = {
     'ḷ': 'ಳ',
     'x': 'ಕ್ಷ', // ಎಕ್ಸ
     'jn': 'ಜ್ಞ',
+
+    //new mappings
+    'tt': 'ಟ್',
+    'dd': 'ಡ್',
+    'nn': 'ಣ್',
+    'll': 'ಲ್',
+    'ss': 'ಸ್',
+    'rr': 'ರ್',
+    'mm': 'ಮ್',
+    'yy': 'ಯ್',
+    'vv': 'ವ್',
+    'bb': 'ಬ್',
+    'pp': 'ಪ್',
+    'kk': 'ಕ್',
+    'gg': 'ಗ್',
+    'jj': 'ಜ್',
+    'zz': 'ಝ್',
+    'ff': 'ಫ್',
+    'qq': 'ಕ್ವ್',
+    'xx': 'ಕ್ಷ್',
+    'hh': 'ಹ್',
+    'tr': 'ತ್ರ್',
+    'dr': 'ದ್ರ್',
+    'kr': 'ಕ್ರ್',
+    'pr': 'ಪ್ರ್',
+    'br': 'ಬ್ರ್',
+    'gr': 'ಗ್ರ್',
+    'fr': 'ಫ್ರ್',
+    
+    'sh': 'ಶ್',
+    
+   
+    
+    
+  
+
 };
 
 const mapConsonants = mapIsoToKannada(_isoConsonants);
@@ -199,11 +235,11 @@ word distance - levenshtein distance
 wrong  */
 
 const consonants = {
-    'k': mapConsonants(['k', 'kh',]),
+    'k': mapConsonants(['k', 'kh','kk']),
     'kh': mapConsonants(['k', 'kh',]),
 
-    'g': mapConsonants(['g', 'gh',]),
-    'gh': mapConsonants(['g', 'gh',]),
+    'g': mapConsonants(['g', 'gh','gg']),
+    'gh': mapConsonants(['g', 'gh','gg']),
 
     // '': mapConsonants(['ṅ',]),
 
@@ -214,55 +250,55 @@ const consonants = {
     'ch': mapConsonants(['c', 'k']),
 
 
-    'j': mapConsonants(['j',]),
+    'j': mapConsonants(['j','jj']),
     // 'j': mapConsonants(['j', 'jh',]),
     'jh': mapConsonants(['j', 'jh',]),
 
 
     // '': mapConsonants(['ñ',]),
 
-    'n': mapConsonants(['n',]),
+    'n': mapConsonants(['n','nn','ņ','ň']),
     'nh': mapConsonants(['n',]),
 
-    't': mapConsonants(['ṭ', 'ṭh', 't', 'th',]),
+    't': mapConsonants(['ṭ', 'ṭh', 't', 'th','tt',]),
     'th': mapConsonants(['t', 'th',]),
 
 
-    'd': mapConsonants(['ḍ', 'ḍh', 'd', 'dh',]),
+    'd': mapConsonants(['ḍ', 'ḍh', 'd', 'dh','dd']),
 
-    'p': mapConsonants(['p', 'ph',]),
-    'f': mapConsonants(['ph',]),
+    'p': mapConsonants(['p', 'ph','pp',]),
+    'f': mapConsonants(['ph','f','ff']),
 
 
-    'b': mapConsonants(['b', 'bh',]),
+    'b': mapConsonants(['b', 'bh','bb',]),
     'bh': mapConsonants(['b', 'bh',]),
 
 
-    'm': mapConsonants(['m',]),
+    'm': mapConsonants(['m','mm',]),
     'mh': mapConsonants(['m',]),
 
 
 
-    'y': mapConsonants(['y',]),
+    'y': mapConsonants(['y','yy',]),
 
-    'r': mapConsonants(['r',]),
+    'r': mapConsonants(['r','rr',]),
 
     // 'l': mapConsonants(['l', 'ḷ',]),
-    'l': mapConsonants(['l',]),
+    'l': mapConsonants(['l','ll','ļ']),
 
-    'v': mapConsonants(['v',]),
+    'v': mapConsonants(['v','vv',]),
     'w': mapConsonants(['v',]),
 
 
     // 's': mapConsonants(['ś', 'ṣ', 's',]),
-    's': mapConsonants(['s',]),
+    's': mapConsonants(['s','ss','sh','ś','ș']),
 
     'sh': mapConsonants(['ś', 'ṣ', 's',]),
 
 
-    'h': mapConsonants(['h',]),
+    'h': mapConsonants(['h','hh',]),
 
-    'x': mapConsonants(['x',]),
+    'x': mapConsonants(['x','xx',]),
 
     // kyu
     // 'q': mapConsonants(['x',]),
@@ -271,7 +307,13 @@ const consonants = {
     // z
     // q
     // x
-
+    //more mappings-meena
+    
+    'z': mapConsonants(['z', 'zz']),
+   
+    'q': mapConsonants(['q', 'qq']),
+   
+    // ... continue adding for other 
 };
 
 /**

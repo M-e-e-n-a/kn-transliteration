@@ -32,6 +32,10 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@types/node": "^20.10.5",
+    "csv-parse": "^5.5.3",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
     "serve": "^14.0.1",
     "textarea-caret": "^3.1.0"
   }

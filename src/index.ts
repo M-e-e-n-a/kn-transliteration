@@ -23,7 +23,7 @@ const suggestionDivs = document.getElementById('suggestions') as HTMLDivElement;
 /**
  * Global constants
  */
-const MAX_SUGGESTIONS = 7; // We show max 7 suggestions in the menu
+const MAX_SUGGESTIONS = 10; // We show max 7 suggestions in the menu
 
 /**
  * Global variables
@@ -152,7 +152,7 @@ function possibleSuggestions(englishWord: InputEn): TransliteratedKn[] {
     // TODO make tests to just run this against some inputs
     const allFuncTrans = transliterate(englishWord);
 
-    // console.log(allFuncTrans);
+    //console.log(allFuncTrans);
 
     const funcTrans = allFuncTrans.slice(0, 5);
     const uniqWords = new Set<string>(

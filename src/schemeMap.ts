@@ -38,7 +38,7 @@ const vowels = {
 
     'e': mapVowels(['e', 'ē']),
     'ae': mapVowels(['e', 'ē']),
-    'ay': mapVowels(['e', 'ē']),
+    //'ay': mapVowels(['e', 'ē']),
 
     'ai': mapVowels(['ai',]),
 
@@ -73,7 +73,7 @@ const _isoDiacritics = {
 const mapDiactrics = mapIsoToKannada(_isoDiacritics);
 
 const marks = {
-    'a': mapDiactrics(['', 'ā']),
+    'a': mapDiactrics(['a', 'ā']),
     'aa': mapDiactrics(['ā']),
 
     'i': mapDiactrics(['i', 'ī']),
@@ -100,6 +100,7 @@ const marks = {
     'ho': mapDiactrics(['o', 'ō']),
 
     'au': mapDiactrics(['au']),
+    'ou': mapDiactrics(['au']),
 };
 
 /**
@@ -118,9 +119,9 @@ const mapOther = mapIsoToKannada(_isoOther);
 const other = {
 
     "am": mapOther(["ṃ"]),
-    // "an": mapOther(["ṃ"]),
+    //"an": mapOther(["ṃ"]),
 
-    // "um": mapOther(["ṃ"]),
+    "um": mapOther(["ṃ"]),
 
     "ah": mapOther(["ḥ"]),
     // "aha": mapOther(["ḥ"]),
@@ -264,8 +265,8 @@ const consonants = {
     'th': mapConsonants(['t', 'th',]),
 
 
-    'd': mapConsonants(['ḍ', 'ḍh', 'd', 'dh','dd']),
-
+    'd': mapConsonants(['d', ]),
+    'dh':mapConsonants(['dh',]),
     'p': mapConsonants(['p', 'ph','pp',]),
     'f': mapConsonants(['ph','f','ff']),
 
@@ -279,7 +280,7 @@ const consonants = {
 
 
 
-    'y': mapConsonants(['y','yy',]),
+    'y': mapConsonants(['y',]),
 
     'r': mapConsonants(['r','rr',]),
 
